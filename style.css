@@ -1,0 +1,310 @@
+body{
+	width: 100%;
+	line-height: 20px;
+	background:#211E1E;
+}
+#container{
+	width:800px;
+	margin:auto;
+	background:#211E1E;
+	color: white;
+	border: 2px double RGB(150,150,150);
+	font-family: sans-serif;
+}
+#banner{
+	width: 800px;
+	height:400px;
+	border: 2px solid RGB(150,150,150);
+	box-shadow: 2px 2px 40px RGB(150,150,150);
+}
+a{
+	text-decoration: none;
+}
+nav a{
+	text-decoration: none;
+	display: inline-block;
+	width:150px;
+	height: 20px;
+	margin:10px 0px 0px 0px;
+	padding-top:5px;
+	border-left: 3px solid RGB(150,150,150);
+	border-right: 3px solid RGB(150,150,150);
+	border-bottom: 3px solid RGB(150,150,150);
+	border-top: 3px solid RGB(150,150,150);
+	text-align: center;
+	color:white;
+	font-family: "Arial";
+	transition: color 0.35s;
+}
+nav a:not(.selectedPage):hover{
+	border: 3px solid RGB(150,150,150);
+	color:#3399FF;
+	color:lime;
+}
+#bottom nav a{
+	border-left: 1px solid RGB(150,150,150);
+	border-right: 1px solid RGB(150,150,150);
+	border-bottom: 1px solid RGB(150,150,150);
+	border-top: none;
+}
+#bottom nav a:hover{
+	border-top: 1px outset RGB(150,150,150);
+}
+
+#middle, #aboutSection{
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 10px;
+}
+#aboutSection{
+	color:#E1C96B;
+	padding:1px 20px 1px 20px;
+	box-shadow: 1px 1px 2px black;
+	background:RGB(40,40,40);
+	margin: auto auto 15px auto;
+	width: 80%;
+	height: 100px;
+	font-family: sans-serif;
+	font-size: 15px;
+}
+article {
+	padding:1px 20px 1px 20px;
+	box-shadow: 2px 2px 20px black;
+	background:RGB(40,40,40);
+	border-radius: 20px;
+	margin: 5% auto auto auto;
+	width: 80%;
+}
+article p{
+	margin-left: 10px;
+	text-align: justify;
+	text-indent: 20px;
+}
+header{
+	font-weight: bold;
+	text-align:center;
+	color:#858EF4;
+	height: 25px;
+	background:RGB(50,50,50);
+	border-radius:10px;
+	padding-top:4px;
+	font-family: "Batang";
+	font-size: 1.4em;
+}
+#bottom{
+		margin:50px auto auto auto;
+}
+#titles, #infos{
+	display: inline-block;
+}
+#infos{
+	margin-left: 10px;
+
+}
+p:hover{
+	color:white;
+	background:RGB(55,55,55);
+}
+.aboutAlbum:hover{
+	background:RGB(55,55,55);
+	color:lime;
+}
+p{
+	color:white;
+	transition: background 0.35s;
+	padding: 3px;
+	border-radius: 6px;
+}
+#bottom .selectedPage{
+	font-weight: bold;
+	color:#3399FF;
+	box-shadow: 3px -3px 7px black;
+}
+#top .selectedPage{
+	font-weight: bold;
+	color:#3399FF;
+	box-shadow: 3px 3px 7px black;
+}
+.selected{
+	font-weight: bold;
+	color:#3399FF;
+}
+#email{
+	cursor: pointer;
+		color:#E1C96B;
+}
+#email:hover{
+	color:red;
+}
+#albums li{
+	transition: color 0.2s;
+	cursor: pointer;
+}
+#albums li:hover{
+	color:lime;
+}
+tr td:nth-child(1) {
+    text-align: center;
+    width: auto;
+}
+tr td:nth-child(2) {
+    text-align:left;
+    width: 300px;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+tr td:nth-child(3) {
+    text-align:left;
+    width: 150px;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+tr{
+	height: 40px;
+	transition:color 0.35s;
+}
+tr:hover{
+	color:lime;
+	cursor: pointer;
+}
+.album{
+	display: none;
+}
+.player{
+	display: none;
+}
+audio{
+	box-shadow: 2px 2px 20px black;
+	width:300px;
+	border-bottom: 2px solid black;
+	border-radius: 5px;
+}
+h1{
+	text-shadow:4px 2px black;
+	margin-top:6%;
+}
+ul{
+	list-style-type: circle;
+}
+.aboutAlbum{
+	text-shadow:3px 2px black;
+	margin-top:10%;
+	cursor:pointer;
+}
+.thumbnail{
+	width:150px;
+	height: 150px;
+	background: black;
+}
+.albumCover{
+	display: inline-block;
+	margin-left: 10px;
+	margin-top:20px;
+	border: 2px inset white;
+}
+.albumCover:hover{
+	cursor: pointer;
+}
+h4{
+	text-align: center;
+	margin-bottom: 0px;
+	margin-top:0px;
+	font-family: serif;
+}
+#albumsCovers{
+	margin:auto;
+	width:700px;
+}
+#albumsPhotos{
+	margin: 50px auto auto auto;
+	width:700px;
+}
+.albumPhoto img{
+	width: 150;
+	height: 150px;
+	display: inline-block;
+	margin:5px auto 5px auto;
+	border: 2px ridge RGB(150,150,150);
+	cursor: pointer;
+}
+hr{
+	margin-bottom: 0px;
+}
+.albumPhoto{
+	display: none;
+}
+#mainFrame{
+	display: none;
+	width: 700px;
+	height: 600px;
+	box-shadow: 10px 6px 10px RGB(10,10,10);
+	margin-bottom: 0px;
+	border: 1px inset RGB(70,70,70);
+	border-radius: 3px;
+	max-width: 700px;
+	max-height: 600px;
+}
+#mainFrameContainer{
+	display: none;
+	margin: auto auto 25px auto;
+	width: 700px;
+	height: 600px;
+	border-bottom: 1px solid white;
+	padding-bottom: 30px;
+}
+
+#left{
+	float: left;
+	/*position: absolute;
+	top:1290px;*/
+	display: inline-block;
+}
+#right{
+	/*position: absolute;
+	top:1290px;
+	left:930px;*/
+	display: inline-block;
+	position: absolute;
+	margin-left:500px;	
+}
+
+.changePicture{
+	width: 100px;
+	height: 30px;
+	background: black;
+	opacity: 0.3;
+	text-align: center;
+	padding-top: 10px;
+	cursor: pointer;
+}
+.changePicture:hover{
+	opacity: 0.7;
+}
+.unselectable{
+	-moz-user-select: none; 
+    -khtml-user-select: none; 
+    -webkit-user-select: none; 
+    -o-user-select: none; 
+}
+#counter{
+	position: absolute;
+	margin-left:330px;
+}
+#gui{
+	position: absolute;
+	top:1307px;
+}
+#showAllPictures{
+	cursor: pointer;
+	display: none;
+	width: 500px;
+	margin:auto auto 20px;
+}
+#showAllPictures:hover{
+	color:lime;
+	background: RGB(55,55,55);
+}
+#albumsCovers article{
+	padding-bottom: 10px;
+}
+

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="description" content="Eminem Galery"/>
+		<meta name="keywords" content="Galery, Eminem"/>
+		<meta name="author" content="Dejan Bogatinovski, bogatinovski.dejan@gmail.com"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=9">
+
+		<title> Galery </title>
+		<link rel="stylesheet" type="text/css" href="../style.css">
+		<link rel="icon" type="image/x-icon" href="../favicon.ico">
+		<script type="text/javascript" src="../jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="../script.js"></script>
+		<script type="text/javascript" src="../scriptGalery.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			<div id="top">
+				<img id="banner" src="../logo.jpg"></img>
+				<nav class="navigation">
+					<a href="../index.html"> Home </a>
+					<a href="personal.html"> Personal life </a>
+					<a href="discography.html"> Discography </a>
+					<a href="artistry.html"> Artistry </a>
+					<a href="galery.html" class="selectedPage"> Galery </a>
+				</nav>
+			</div>
+			
+			<div id="middle">
+			<div id="albumsCovers" class="unselectable">
+			
+				<header>Photo albums</header>
+				<div class="albumCover" data-path="../galery/Personal/" data-count="20">
+					<h4> Personal Galery </h4><hr/>
+					<img class="thumbnail" src="../thumbnails/personal.jpg"></img>
+				</div>
+				<div class="albumCover" data-path="../galery/Performance/" data-count="14">
+					<h4> Performance </h4><hr/>
+					<img class="thumbnail" src="../thumbnails/performance.jpg"></img>
+				</div>
+				<div class="albumCover" data-path="../galery/Quotes/" data-count="13">
+					<h4> Quotes </h4><hr/>
+					<img class="thumbnail" src="../thumbnails/quotes.jpg"></img>
+				</div>
+			
+			</div>
+			<hr/>
+			
+			<div id="albumsPhotos">
+				<div id="mainFrameContainer" class="unselectable">
+					<img id="mainFrame" src="test.jpg"> </img>
+					<div id="gui">
+						<div id="left" class="changePicture unselectable">Previous</div>
+						<div id="right" class="changePicture unselectable">Next</div>
+						<div id="counter"> 23/23</div>
+					</div>
+				</div>
+				<header id="showAllPictures">Show all images from this galery</header>
+			</div>
+			</div>
+
+			<div id="bottom">
+				<section id="aboutSection">
+					<p id="titles">
+						<span class="naslov"> Author: </span> <br>
+						<span class="naslov"> Email: </span> <br>
+						<span class="naslov"> Created on: </span> <br>
+						<span class="naslov"> Last edited on: </span> <br>
+					</p>
+					<p id="infos">
+						<span class="info"> Dejan Bogatinovski </span> <br>
+						<a href="mailto:bogatinovski.dejan@students.finki.ukim.mk">
+							<span class="info" id="email"> bogatinovski.dejan@students.finki.ukim.mk </span></a> <br>
+						<span class="info"> 06.01.2014 </span> <br>
+						<span class="info">15.01.2014</span> <br>
+					</p>
+				</section>
+				<nav class="navigation">
+					<a href="../index.html"> Home </a>
+					<a href="personal.html"> Personal life </a>
+					<a href="discography.html"> Discography </a>
+					<a href="artistry.html"> Artistry </a>
+					<a href="galery.html" class="selectedPage"> Galery </a>
+				</nav>
+			</div>
+		</div>
+	</body>
+</html>
